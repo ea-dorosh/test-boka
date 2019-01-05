@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+	padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 30px;
+	line-height: 32px;
+	color: #1f253d;
+	min-width: 1560px;
+    min-height: 1560px;
+}
+
+.container {
+	width: 1560px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.main-header {
+    min-width: 1560px;
+    min-height: 1000px;
+    background: #00334d url("../img/background_header.jpg") no-repeat;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 109px;
+    padding-left: 209px;
+    padding-right: 196px;
+}
+
+.language-navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 345px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.language-navigation a {
+    text-decoration: none;
+    color: #11a8ab;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.language-navigation .language-selected {
+    color: #ffffff;
+}
+
+.language-navigation li {
+    padding-left: 0px;
+    margin-top: -5px;
+}
+
+.main-header .main-menu {
+    margin-left: 707px;
+    margin-top: 173px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    letter-spacing: 12px;
+    font-weight: 100;
+    padding-left: 31px;
+    padding-right: 23px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.main-menu .logo-middle {
+    margin-bottom: 30px;
+}
+
+.main-menu .logo-a-great {
+    margin-bottom: 131px;
+}
+
+.join-form {
+    margin-top: 279px;
+}
+
+.form-logo {
+    padding-left: 627px;
+}
+
+
+/* /////////////////////////////////////////
+        стили для формы регистрации
+   ///////////////////////////////////////// */
+
+.register-form {
+    padding-left: 405px;
+    padding-top: 100px;
+}
+
+.my_gender p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.radio-wrapper {
+    display: flex;
+}
+
+.my_gender {
+    margin-bottom: 56px;
+}
+
+.filter-option {
+    position: relative;
+}
+
+.radio-indicator {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.filter-radio-men input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 125px;
+    height: 39px;
+	top: -19px;
+	left: 125px;
+    border: 1px solid #1f253d;
+    border-radius: 10px;
+    padding: 17px 0px 10px 69px;
+}
+
+.filter-radio-women input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 125px;
+    height: 39px;
+	top: -19px;
+	left: 417px;
+    border: 1px solid #1f253d;
+    border-radius: 10px;
+    padding: 17px 18px 10px 50px;
+}
+
+
+.filter-radio-men input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+    width: 194px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: #1f253d;
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.filter-radio-women input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+    width: 193px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: #1f253d;
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.his_gender p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.filter-radio-men-his input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 125px;
+    height: 39px;
+	top: -19px;
+	left: 35px;
+    border: 1px solid #1f253d;
+    border-radius: 10px;
+    padding: 17px 0px 10px 69px;
+    background-color: #1f253d;
+    color: #ffffff;
+}
+
+.filter-radio-women-his input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 125px;
+    height: 39px;
+	top: -19px;
+	left: 328px;
+    border: 1px solid #1f253d;
+    border-radius: 10px;
+    padding: 17px 18px 10px 50px;
+    background-color: #1f253d;
+    color: #ffffff;
+}
+
+
+.filter-radio-men-his input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+    width: 194px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: #1f253d;
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.filter-radio-women-his input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+    width: 193px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: #1f253d;
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.email-wrapper {
+    margin-top: 75px;
+    margin-left: 3px;
+}
+
+.email-input {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.email-wrapper input {
+    padding: 10px;
+    margin-left: 86px;
+    font-size: 25px;
+    line-height: 27px;
+    letter-spacing: 3px;
+    width: 475px;
+    border: none;
+}
+
+.email-wrapper input::-webkit-input-placeholder {
+    color: #1f253d;
+}
+
+.password-wrapper {
+    margin-top: 27px;
+}
+
+.password-input {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.password-wrapper input {
+    padding: 12px 10px 10px 8px;
+    margin-left: 23px;
+    font-size: 30px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    width: 475px;
+    border: none;
+}
+
+.password-wrapper input::-webkit-input-placeholder {
+    color: #1f253d;
+}
+
+.form-btn {
+    display: block;
+    background-color: #1f253d;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 27px 10px 23px 74px;
+    margin-top: 109px;
+    margin-left: 294px;
+    margin-right: 570px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.register-info {
+    margin: 35px 393px 10px 155px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.user-inforamtion .photos {
+    margin: 277px 196px 50px;
+}
+
+.info img {
+    margin: 122px 486px 3px;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 24px;
+    margin: 10px 189px 10px 196px;
+    letter-spacing: 2px;
+}
+
+.main-footer .footer-developed {
+    margin: 249px 450px 20px 468px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.main-navigation .main-navigation-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 64px 217px 20px 200px;
+    padding: 0;
+}
+
+.main-navigation-list a {
+    text-decoration: none;
+    color: #1f253d;
+}
+
+.main-navigation-list li {
+    min-height: 49px;
+    border-bottom: 8px solid transparent;
+}
+
+.main-navigation-list .active {
+    border-bottom: 8px solid #1f253d;
+}
